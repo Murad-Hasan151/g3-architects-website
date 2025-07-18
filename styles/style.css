@@ -26,6 +26,7 @@
     .title{
         font-weight: bold;
         font-size: 3rem;
+        color: #131313;
     }
     main {
         max-width: 1200px;
@@ -47,7 +48,7 @@
         cursor: pointer;
         background-color: #ff6f00;
     }
-    .descriptio{
+    .description{
         font-size: 1rem;
         color: #727272;
     }
@@ -87,6 +88,7 @@
 .banner-title{
     font-weight: 700;
     font-size: 4rem;
+    color: #131313;
 }
 .banner-image{
     width: 100%;
@@ -119,6 +121,57 @@
 .our-features p {
     margin-bottom: 40px;
 }
+
+
+/* features you enjoy */
+#feature-title{
+    border-left: 1px solid #FF900E;
+    border-width: 5px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+#feature-description{
+    margin-bottom: 15px;
+}
+.card-title{
+    font-family: 500;
+    font-size: 1.2rem;
+    color: #131313;
+    margin-top: 0;
+    margin-bottom:0;   
+}
+.card .description{
+    margin-bottom: 0;
+}
+.card{
+    width: 550px;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 10px;
+}
+.architect-apu img{
+    width: 100%;
+}
+.feature-flexbox{
+    max-width: 1200px;
+    gap: 140px;
+}
+#badge-btn{
+    padding: 45px 42px;
+    margin-left: -90px;
+    margin-top: -90px;
+}
+#badge{
+    font-weight :bold ;
+    font-size: 4rem;
+}
+#badge2{
+    font-weight: medium;
+    font-size: 1.5rem;
+}
+
 
 /* some fact style */
 .some-facts .title{
@@ -198,6 +251,7 @@ footer .description{
 @media screen and (max-width: 576px) {
     .navbar, 
     .nav-links, 
+    .feature-flexbox,
     .teams{
         flex-direction: column;
     }
@@ -221,6 +275,17 @@ footer .description{
     .brand{
         margin-left: 10px;
     }
+    #badge-btn{
+       margin-top: 20px ;
+       margin-left: 0;
+   }
+   .card{
+    width: 300px;
+    margin-bottom: 20px;
+   }
+   .card-model{
+    justify-items: center;
+   }
 }
 
 
@@ -247,4 +312,18 @@ footer .description{
         justify-items: center;
         row-gap: 50px;
     }
+    .card-model{
+        max-width: 350px;
+    }
+    .card{
+        max-width: 350px;
+    }
+    .feature-flexbox{
+        gap: 80px;
+    }
+    #badge-btn{
+       margin-top: 30px ;
+       margin-left: 0;
+   }
+   
 }
