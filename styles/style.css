@@ -123,21 +123,24 @@
 .some-facts .description{
     margin-bottom: 80px;
 }
-.fact{
-    max-width: 250px;
-    text-align: center;
-    border: 2px solid #FF900E;
-    border-radius: 8px;
-    padding: 40px 0;
-}
 .facts{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 100px;
-    margin: 0 50px;
+}
+
+.fact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    border: 2px solid #FF900E;
+    border-radius: 8px;
 }
 .fact-nb{
-    margin: 5px 0;
+    margin: 10px 0;
     font-weight: 500;
     font-size: 2.8rem;
     color: #424242;
@@ -148,6 +151,9 @@
     color: #727272;
     margin: 0 0;
 }
+.fact-details{
+    max-width: 540px;
+}
 
 
 /* responsive media query */
@@ -157,8 +163,19 @@
     .teams{
         flex-direction: column;
     }
-    .team-img-container{
+    .team-img-container, 
+    .facts{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .headings,
+    .facts{
+        justify-items: center;
+    }
+    .fact-details{
+        max-width: 400px;
+    }
+    .brand{
+        margin-left: 10px;
     }
 }
 
@@ -170,5 +187,15 @@
     }
     .our-features{
         max-width: 600px;
+    }
+    .headings,
+    .facts{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        justify-items: center;
+        justify-self: center;
+    }
+    .brand{
+        margin-left: 20px;
     }
 }
